@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav{
+    background-color: rgb(140, 190, 63);
+    background-image: linear-gradient(to left, rgb(76, 122, 78), rgb(87, 151, 87));
+    height: 90px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+
+}
+.enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center; 
+    margin: 0px;  
+    padding: 10px;
+}
+
+nav ul li {
+    color: rgb(83, 165, 83);
+    font-size: 0.75rem;
+    font-family: 'PT Sans', sans-serif;
+    display: inline-block;
+    padding: 0rem;
+    margin: 1.25rem;
+    text-transform: uppercase;
+    
+}
+
+nav ul li a {
+    color: azure;
+}
+
+.checkbtn {
+    font-size: 20px;
+    color:aliceblue;
+    float: right;
+    line-height: 90px;
+    margin-right: 50px;
+    cursor: pointer;
+    display: none;
+    
+}
+
+#check {
+    display: none;
+}
+.logoWhatsapp {
+    position: fixed;
+    right: 1.25rem;
+    bottom: 1.25rem;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.bannerProductos img {
+    width: 100%;
+    height: 300px;
+}
+
+footer {
+    height: 6.25rem;
+    display: block;
+    margin-top: 6.25rem;
+    background-color: black;
+}
+
+footer h4 {
+    font-size: 0.75rem;
+    font-family: 'PT Sans', sans-serif;
+    color: antiquewhite;
+}
+
+@media (max-width: 1080px) {
+    .enlace {
+        padding-left: 20px;
+
+    }
+    
+    nav ul li a {
+        font-size: 12px;
+    }
+    
+}
+
+@media (max-width: 850px) {
+    .checkbtn{
+        display: block;
+
+    }
+    ul {
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background: gray;
+        top: 90px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    li a:hover, li a.active {
+        background: none;
+        color:darkkhaki
+    }
+    #check:checked ~ ul {
+        left:0;
+    }
+}
