@@ -45,6 +45,11 @@ nav ul li a {
     color: azure;
 }
 
+nav ul li:hover {
+    background-color: rgb(140, 190, 63);
+}
+
+
 .checkbtn {
     font-size: 20px;
     color:aliceblue;
@@ -73,6 +78,12 @@ nav ul li a {
     flex-wrap: wrap;
     
 }
+
+.container img:hover {
+    transform: scale(1.05)
+}
+
+
 
 .bannerProductos img {
     width: 100%;
