@@ -110,6 +110,12 @@ footer h4 {
 .parrafo {
     margin: 100px;
     text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.textoForm {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @media (max-width: 1080px) {
