@@ -1,1 +1,19 @@
 @import "../utilities/variables";
+
+@mixin size ($fontSize) {
+    font-size: $fontSize;
+}
+@mixin grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+main {
+    @include size(15px)
+}
+
+
+
